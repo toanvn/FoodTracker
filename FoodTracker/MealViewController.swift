@@ -28,6 +28,7 @@ class MealViewController: UIViewController , UITextFieldDelegate , UIImagePicker
             navigationItem.title = meal.name
             nameTextField.text = meal.name
             photoImageView.image = meal.photo
+//            Test content mode image
             photoImageView.contentMode = .scaleAspectFit
             ratingControl.rating = meal.rating
         }
