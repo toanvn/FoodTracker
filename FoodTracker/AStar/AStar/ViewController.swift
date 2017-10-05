@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  FoodTracker
+//  AStar
 //
-//  Created by Tommy on 9/14/17.
+//  Created by Tommy on 9/25/17.
 //  Copyright © 2017 Tommy. All rights reserved.
 //
 
