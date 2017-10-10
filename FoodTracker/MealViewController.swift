@@ -19,6 +19,10 @@ class MealViewController: UIViewController , UITextFieldDelegate , UIImagePicker
     @IBOutlet weak var saveButton: UIBarButtonItem!
     var meal: Meal?
     
+    private func localization(){
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Handle the text field's user input through delegate callbacks

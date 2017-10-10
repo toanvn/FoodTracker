@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Your Meals-->
+        <!--Your Meals ds-->
         <scene sceneID="iBC-5r-AX0">
             <objects>
                 <tableViewController id="HqP-fX-L3K" customClass="MealTableViewController" customModule="FoodTracker" sceneMemberID="viewController">
@@ -57,13 +57,16 @@
                             <outlet property="delegate" destination="HqP-fX-L3K" id="Hch-LN-VRn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Your Meals" id="3JH-9z-1ri">
+                    <navigationItem key="navigationItem" title="Your Meals ds" id="3JH-9z-1ri">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MNF-kt-SQo">
                             <connections>
                                 <segue destination="E9x-1u-vFH" kind="presentation" identifier="AddItem" id="KSD-lG-uo6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="navigationBar" destination="3JH-9z-1ri" id="Ktg-4F-pn8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WP1-qt-ubU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +85,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xq1-Je-2k0">
-                                <rect key="frame" x="20" y="84" width="374" height="410"/>
+                                <rect key="frame" x="20" y="104" width="374" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-E7-HgX">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
@@ -195,6 +198,6 @@
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UMA-I9-df5"/>
+        <segue reference="G8w-Ke-DEA"/>
     </inferredMetricsTieBreakers>
 </document>

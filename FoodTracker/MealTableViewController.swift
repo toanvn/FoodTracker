@@ -13,9 +13,15 @@ class MealTableViewController: UITableViewController {
     //    MARK: Properties
     var meals = [Meal]()
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
+    private func localization(){
+        navigationBar.title = NSLocalizedString("YourMeal123", comment: "Your meal in title")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        localization()
         //        Use the edit button item provided by the table view controller
         navigationItem.leftBarButtonItem = editButtonItem
         //        Load any saved meals, otherwise load sample data
